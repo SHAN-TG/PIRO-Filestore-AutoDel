@@ -119,7 +119,7 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', 'dupe'),
+                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', callback_data='pages'),
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info')
             ]
@@ -128,7 +128,7 @@ async def next_page(bot, query):
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', 'dupe'),
+                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', callback_data='pages'),
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ]
@@ -141,7 +141,7 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', 'dupe'),
+                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', callback_data='pages'),
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ]
@@ -150,7 +150,7 @@ async def next_page(bot, query):
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', 'dupe'),
+                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', callback_data='pages'),
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ]
@@ -887,7 +887,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer("𝖸𝗈𝗎 𝖽𝗈𝗇'𝗍 𝗁𝖺𝗏𝖾 𝗌𝗎𝖿𝖿𝗂𝖼𝗂𝖾𝗇𝗍 𝗋𝗂𝗀𝗁𝗍𝗌 𝗍𝗈 𝖽𝗈 𝗍𝗁𝗂𝗌 !", show_alert=True)
 
     elif query.data == 'rkbtn':
-        await query.answer("𝖧𝖾𝗒 𝖡𝗋𝗈 😍\n\n🎯 𝖢𝗅𝗂𝖼𝗄 𝖮𝗇 𝖳𝗁𝖾 𝖡𝗎𝗍𝗍𝗈𝗇 𝖻𝖾𝗅𝗈𝗐 𝖳𝗁𝖾 𝖥𝗂𝗅𝖾𝗌 𝖸𝗈𝗎 𝖶𝖺𝗇𝗍 𝖠𝗇𝖽 𝖲𝗍𝖺𝗋𝗍 𝖳𝗁𝖾 𝖡𝗈𝗍 ⬇️", True)
+        await query.answer("𝖢𝗅𝗂𝖼𝗄 𝖮𝗇 𝖳𝗁𝖾 𝖡𝗎𝗍𝗍𝗈𝗇 𝖻𝖾𝗅𝗈𝗐 𝖳𝗁𝖾 𝖥𝗂𝗅𝖾𝗌 𝖸𝗈𝗎 𝖶𝖺𝗇𝗍 𝖠𝗇𝖽 𝖲𝗍𝖺𝗋𝗍 𝖳𝗁𝖾 𝖡𝗈𝗍 ⬇️", True)
 
     elif query.data == 'info':
         await query.answer("Tʜɪs Mᴇssᴀɢᴇ Wɪʟʟ Bᴇ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ Dᴇʟᴇᴛᴇᴅ 🗑 Aғᴛᴇʀ 10 Mɪɴᴜᴛᴇs Tᴏ Pʀᴇᴠᴇɴᴛ Cᴏᴘʏʀɪɢʜᴛ ©️", True)
@@ -1298,7 +1298,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)}🔮{file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"{get_size(file.file_size)}〉{file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -1322,7 +1322,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', 'dupe'),
+                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', callback_data='pages'),
                 InlineKeyboardButton(f'😇 Info', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ]
@@ -1331,7 +1331,7 @@ async def auto_filter(client, msg, spoll=False):
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', 'dupe'),
+                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', callback_data='pages'),
                 InlineKeyboardButton(f'😇 Info', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ]
@@ -1344,7 +1344,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', 'dupe'),
+                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', callback_data='pages'),
                 InlineKeyboardButton(f'😇 Info', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ]
@@ -1353,7 +1353,7 @@ async def auto_filter(client, msg, spoll=False):
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', 'dupe'),
+                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', callback_data='pages'),
                 InlineKeyboardButton(f'😇 Info', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ])
