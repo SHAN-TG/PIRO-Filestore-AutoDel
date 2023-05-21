@@ -30,8 +30,8 @@ async def start(client, message):
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.send_sticker(chat_id=message.chat.id, sticker='CAACAgUAAxkBAAEFT-pi1nRCRLfnm1NkMMz3jDmDWYA4sAACJQUAAsjpsVYHpmVOBardDCkE', reply_markup=reply_markup)
-        await asyncio.sleep(8)
+        m=await message.reply_sticker(chat_id=message.chat.id, sticker='CAACAgUAAxkBAAEFT-pi1nRCRLfnm1NkMMz3jDmDWYA4sAACJQUAAsjpsVYHpmVOBardDCkE', reply_markup=reply_markup)
+        await asyncio.sleep(5)
         await m.delete()
         await message.delete()
         if not await db.get_chat(message.chat.id):
