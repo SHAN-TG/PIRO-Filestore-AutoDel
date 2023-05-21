@@ -1544,7 +1544,7 @@ async def advantage_spell_chok(client, msg):
         for k, movie_name in enumerate(movielist)]
     btn.insert(0,
         [
-            InlineKeyboardButton("🔍 Cʜᴇᴄᴋ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ 🔎", url=f"https://www.google.com/search?q={reqst_gle}"),
+            InlineKeyboardButton("🔍 Cʜᴇᴄᴋ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ 🔎", url=f"https://www.google.com/search?q={search}"),
             InlineKeyboardButton("⭕️ IMDb", url=f"https://www.imdb.com/find?q={search}")
         ]
     )
