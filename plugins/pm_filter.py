@@ -119,7 +119,7 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', callback_data='pages'),
+                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', 'dupe'),
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info')
             ]
@@ -128,7 +128,7 @@ async def next_page(bot, query):
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', callback_data='pages'),
+                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', 'dupe'),
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ]
@@ -141,7 +141,7 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', callback_data='pages'),
+                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', 'dupe'),
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ]
@@ -150,7 +150,7 @@ async def next_page(bot, query):
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', callback_data='pages'),
+                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', 'dupe'),
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ]
@@ -1322,7 +1322,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', callback_data='pages'),
+                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', 'dupe'),
                 InlineKeyboardButton(f'😇 Info', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ]
@@ -1331,7 +1331,7 @@ async def auto_filter(client, msg, spoll=False):
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', callback_data='pages'),
+                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', 'dupe'),
                 InlineKeyboardButton(f'😇 Info', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ]
@@ -1344,7 +1344,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', callback_data='pages'),
+                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', 'dupe'),
                 InlineKeyboardButton(f'😇 Info', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ]
@@ -1353,7 +1353,7 @@ async def auto_filter(client, msg, spoll=False):
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', callback_data='pages'),
+                InlineKeyboardButton(f'ғɪʟᴇ𝐬: {total_results}', 'dupe'),
                 InlineKeyboardButton(f'😇 Info', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ])
