@@ -207,10 +207,7 @@ Message <b>: {}</b>"""
     CAPTION = """
 📂 <em>File Name</em>: <code>{file_name}</code> - [<code>{file_size}</code>]
 
-
-
-
-
+© @MH_LinkZ
 """
 
     IMDB_TEMPLATE_TXT = """
