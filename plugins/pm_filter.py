@@ -1541,8 +1541,13 @@ async def advantage_spell_chok(client, msg):
                 callback_data=f"spol#{reqstr1}#{k}",
             )
         ]
-        for k, movie_name in enumerate(movielist)
-    ]
+        for k, movie_name in enumerate(movielist)]
+    btn.insert(0,
+        [
+            InlineKeyboardButton('🔍 ɢᴏᴏɢʟᴇ 🔎', url=f'https://www.google.com/search?q='),
+            InlineKeyboardButton("⭕️ IMDb ⭕️", url=f"https://www.imdb.com/find?q="),
+        ]
+    )
     btn.append([InlineKeyboardButton(text="✘ Cʟᴏsᴇ ✘", callback_data=f'spol#{reqstr1}#close_spellcheck')])
     spell_check_del = await msg.reply_photo(
         photo=(SPELL_IMG),
