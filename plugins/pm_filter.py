@@ -1514,10 +1514,7 @@ async def advantage_spell_chok(client, msg):
         reqst_gle = mv_rqst.replace(" ", "+")
         button = [[
                    InlineKeyboardButton("🔍 Gᴏᴏɢʟᴇ 🔎", url=f"https://www.google.com/search?q={reqst_gle}"),
-                   InlineKeyboardButton('⭕️ IMDb ⭕️', url=f'https://www.imdb.com/find?q={msg.text.replace(" ", "+")}')
-                 ],
-                 [
-                   InlineKeyboardButton("Wikipedia ⭕️", url=f"https://en.m.wikipedia.org/w/index.php?search={search}")
+                   InlineKeyboardButton('⭕️ IMDb ⭕️', url=f'https://www.imdb.com/find?q={msg.text.replace(" ", "+")}') 
         ]]
         if NO_RESULTS_MSG:
             await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
@@ -1526,7 +1523,7 @@ async def advantage_spell_chok(client, msg):
             caption=script.I_CUDNT.format(mv_rqst),
             reply_markup=InlineKeyboardMarkup(button)
         )
-        await asyncio.sleep(60)
+        await asyncio.sleep(40)
         await k.delete()
         return
     movielist = []
@@ -1534,10 +1531,7 @@ async def advantage_spell_chok(client, msg):
         reqst_gle = mv_rqst.replace(" ", "+")
         button = [[
                    InlineKeyboardButton("🔍 Gᴏᴏɢʟᴇ 🔎", url=f"https://www.google.com/search?q={reqst_gle}"),
-                   InlineKeyboardButton('⭕️ IMDb ⭕️', url=f'https://www.imdb.com/find?q={msg.text.replace(" ", "+")}')
-                 ],
-                 [
-                   InlineKeyboardButton("Wikipedia ⭕️", url=f"https://en.m.wikipedia.org/w/index.php?search={search}")
+                   InlineKeyboardButton('⭕️ IMDb ⭕️', url=f'https://www.imdb.com/find?q={msg.text.replace(" ", "+")}') 
         ]]
         if NO_RESULTS_MSG:
             await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
@@ -1546,7 +1540,7 @@ async def advantage_spell_chok(client, msg):
             caption=script.I_CUDNT.format(mv_rqst),
             reply_markup=InlineKeyboardMarkup(button)
         )
-        await asyncio.sleep(60)
+        await asyncio.sleep(40)
         await k.delete()
         return
     movielist += [movie.get('title') for movie in movies]
