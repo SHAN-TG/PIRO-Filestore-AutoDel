@@ -1544,9 +1544,10 @@ async def advantage_spell_chok(client, msg):
             )
         ]
         for k, movie_name in enumerate(movielist)]
+    reqst_gle = mv_rqst.replace(" ", "+")
     btn.insert(0,
         [
-            InlineKeyboardButton('🔍 Cʜᴇᴄᴋ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ 🔎', url=f'https://www.google.com/search?q=') 
+            InlineKeyboardButton("🔍 Cʜᴇᴄᴋ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ 🔎", url=f"https://www.google.com/search?q={reqst_gle}") 
         ]
     )
     btn.append([InlineKeyboardButton(text="✘ Cʟᴏsᴇ ✘", callback_data=f'spol#{reqstr1}#close_spellcheck')])
