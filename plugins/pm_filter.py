@@ -1321,8 +1321,7 @@ async def auto_filter(client, msg, spoll=False):
             btn.insert(0, 
             [
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
-                InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info'),bhj
-                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/find?q={msg.text.replace(" ", "+")}')
+                InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ]
             )
 
