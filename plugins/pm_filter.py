@@ -121,7 +121,7 @@ async def next_page(bot, query):
             [
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info'),
-                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/search?q={msg.text.replace(" ", "+")}')
+                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/find?q={msg.text.replace(" ", "+")}')
             ]
             )
 
@@ -130,7 +130,7 @@ async def next_page(bot, query):
             [
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info'),
-                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/search?q={msg.text.replace(" ", "+")}')
+                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/find?q={msg.text.replace(" ", "+")}')
             ]
             )
                 
@@ -143,7 +143,7 @@ async def next_page(bot, query):
             [
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info'),
-                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/search?q={msg.text.replace(" ", "+")}')
+                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/find?q={msg.text.replace(" ", "+")}')
             ]
             )
 
@@ -152,7 +152,7 @@ async def next_page(bot, query):
             [
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info'),
-                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/search?q={msg.text.replace(" ", "+")}')
+                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/find?q={msg.text.replace(" ", "+")}')
             ]
             )
     try:
@@ -1326,7 +1326,7 @@ async def auto_filter(client, msg, spoll=False):
             [
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info'),
-                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/search?q={msg.text.replace(" ", "+")}')
+                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/find?q={msg.text.replace(" ", "+")}')
             ]
             )
 
@@ -1335,7 +1335,7 @@ async def auto_filter(client, msg, spoll=False):
             [
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info'),
-                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/search?q={msg.text.replace(" ", "+")}')
+                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/find?q={msg.text.replace(" ", "+")}')
             ]
             )
                 
@@ -1348,7 +1348,7 @@ async def auto_filter(client, msg, spoll=False):
             [
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info'),
-                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/search?q={msg.text.replace(" ", "+")}')
+                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/find?q={msg.text.replace(" ", "+")}')
             ]
             )
 
@@ -1357,7 +1357,7 @@ async def auto_filter(client, msg, spoll=False):
             [
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info'),
-                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/search?q={msg.text.replace(" ", "+")}')
+                InlineKeyboardButton('imdb', url=f'https://www.imdb.com/find?q={msg.text.replace(" ", "+")}')
             ])
             
                       
@@ -1551,8 +1551,7 @@ async def advantage_spell_chok(client, msg):
                 callback_data=f"spol#{reqstr1}#{k}",
             )
         ]
-        for k, movie_name in enumerate(movielist)]
-    reqst_gle = mv_rqst.replace(" ", "+")
+        for k, movie_name in enumerate(movielist)] 
     btn.insert(0,
         [
             InlineKeyboardButton('🔍 Cʜᴇᴄᴋ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ 🔎', url=f'https://www.google.com/search?q=') 
