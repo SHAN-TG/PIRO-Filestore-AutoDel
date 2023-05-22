@@ -128,7 +128,7 @@ async def next_page(bot, query):
             btn.insert(0, 
             [
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
-                InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
+                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info')
             ]
             )
                 
@@ -140,7 +140,7 @@ async def next_page(bot, query):
             btn.insert(0, 
             [
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
-                InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
+                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info')
             ]
             )
 
@@ -148,7 +148,7 @@ async def next_page(bot, query):
             btn.insert(0, 
             [
                 InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
-                InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
+                InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'info')
             ]
             )
     try:
@@ -244,7 +244,7 @@ async def next_page(bot, query):
         InlineKeyboardButton(f'🎬 {search} 🎬', 'rkbtn')
     ])
     btn.insert(2, [
-        InlineKeyboardButton(" 𝖲𝖾𝗇𝖽 𝖠𝗅𝗅 𝖥𝗂𝗅𝖾𝗌 📤", callback_data=f"send_all#{req}#{key}#{pre}")
+        InlineKeyboardButton("✓ 𝖲𝖾𝗇𝖽 𝖠𝗅𝗅 𝖥𝗂𝗅𝖾𝗌 ✓", callback_data=f"send_all#{req}#{key}#{pre}")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -886,10 +886,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("𝖢𝗅𝗂𝖼𝗄 𝖮𝗇 𝖳𝗁𝖾 𝖡𝗎𝗍𝗍𝗈𝗇 𝖻𝖾𝗅𝗈𝗐 𝖳𝗁𝖾 𝖥𝗂𝗅𝖾𝗌 𝖸𝗈𝗎 𝖶𝖺𝗇𝗍 𝖠𝗇𝖽 𝖲𝗍𝖺𝗋𝗍 𝖳𝗁𝖾 𝖡𝗈𝗍 ⬇️", True)
 
     elif query.data == 'info':
-        await query.answer("Tʜɪs Mᴇssᴀɢᴇ Wɪʟʟ Bᴇ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ Dᴇʟᴇᴛᴇᴅ 🗑 Aғᴛᴇʀ 10 Mɪɴᴜᴛᴇs Tᴏ Pʀᴇᴠᴇɴᴛ Cᴏᴘʏʀɪɢʜᴛ ©️", True)
+        await query.answer("Ask with correct spelling ✅\n🔰 Don't ask movies those are not released in OTT Some Of Theatre Quality Available\n🔰 For better results: MovieName year\n\n\n
+𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝘀 𝗙𝗼𝗿𝗺𝗮𝘁𝘀\n\n• Lucifer  2019\n• Dhoom 3 Hindi\n• 𝖪𝗎𝗋𝗎𝗉 𝖪𝖺𝗇𝗇𝖺𝖽𝖺 \n• 𝖣𝖺𝗋𝗄 𝗌01\n• 𝖲𝗁𝖾 𝖧𝗎𝗅𝗄 720𝗉\n• 𝖥𝗋𝗂𝖾𝗇𝖽𝗌 𝗌03 1080𝗉\n\n‼️𝗗𝗼𝗻𝘁 𝗮𝗱𝗱 𝘄𝗼𝗿𝗱𝘀 & 𝘀𝘆𝗺𝗯𝗼𝗹𝘀  , . - _ 𝗹𝗶𝗸𝗲 send link movie series 𝗲𝘁𝗰‼️", True)
     
     elif query.data == 'tips':
-        await query.answer("𝖣𝖾𝗅𝖾𝗍𝖾𝖽 𝖠𝖿𝗍𝖾𝗋 5 𝖬𝗂𝗇𝗎𝗍𝖾𝗌 𝗍𝗈 𝖯𝗋𝖾𝗏𝖾𝗇𝗍 𝖢𝗈𝗉𝗒𝗋𝗂𝗀𝗁𝗍 !\n\n𝖳𝗁𝖺𝗇𝗄 𝖸𝗈𝗎 𝖥𝗈𝗋 𝖴𝗌𝗂𝗇𝗀 𝖬𝖾 😊\n\n\n𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 𝖯𝖨𝖱𝖮", True)
+        await query.answer("Tʜɪs Mᴇssᴀɢᴇ Wɪʟʟ Bᴇ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ Dᴇʟᴇᴛᴇᴅ 🗑 Aғᴛᴇʀ 10 Mɪɴᴜᴛᴇs Tᴏ Pʀᴇᴠᴇɴᴛ Cᴏᴘʏʀɪɢʜᴛ ©️", True)
 
     elif query.data == "start":
         buttons = [[
@@ -1318,7 +1319,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'😇 Info', 'tips'),
+                InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ]
             )
@@ -1326,7 +1327,7 @@ async def auto_filter(client, msg, spoll=False):
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'😇 Info', 'tips'),
+                InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ]
             )
@@ -1338,7 +1339,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'😇 Info', 'tips'),
+                InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ]
             )
@@ -1346,7 +1347,7 @@ async def auto_filter(client, msg, spoll=False):
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'😇 Info', 'tips'),
+                InlineKeyboardButton(f'Iɴғᴏ', 'tips'),
                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
             ])
             
@@ -1355,7 +1356,7 @@ async def auto_filter(client, msg, spoll=False):
         InlineKeyboardButton(f'🎬 {search} 🎬', 'rkbtn')
     ])
     btn.insert(2, [
-        InlineKeyboardButton("📤 𝖲𝖾𝗇𝖽 𝖠𝗅𝗅 𝖥𝗂𝗅𝖾𝗌 📤", callback_data=f"send_all#{req}#{key}#{pre}")
+        InlineKeyboardButton("✓ 𝖲𝖾𝗇𝖽 𝖠𝗅𝗅 𝖥𝗂𝗅𝖾𝗌 ✓", callback_data=f"send_all#{req}#{key}#{pre}")
     ])
     
     if offset != "":
