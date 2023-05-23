@@ -967,6 +967,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
+        s=await query.message.reply_text('▣▢▢')
+        h=await s.edit('▣▣▢')
+        a=await h.edit('▣▣▣')
+        await asyncio.sleep(1)
+        await a.delete()
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
