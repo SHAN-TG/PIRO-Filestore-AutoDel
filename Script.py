@@ -141,10 +141,15 @@ Request Again"""
 ‼️𝗗𝗼𝗻𝘁 𝗮𝗱𝗱 𝘄𝗼𝗿𝗱𝘀 & 𝘀𝘆𝗺𝗯𝗼𝗹𝘀 𝗹𝗶𝗸𝗲 , . -  send link movie series 𝗲𝘁𝗰‼️"""
 
     OWNER_INFO = """
-○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/SHAN_TG'>Movies Hub</a>
+✰ 𝙎𝙥𝙚𝙘𝙞𝙖𝙡 𝙏𝙝𝙖𝙣𝙠𝙨
+⋆ Subin Ps - [ Team Evamaria ]
+⋆ Team TrojanzHex
+⋆ Team CrazyBotsz
+⋆ Team InFoTel
 
-○ 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉 : <a href='https://t.me/CinemaKendram'>Click 𝖧𝖾𝗋𝖾</a>
-
+🤖 𝘽𝙤𝙩 𝙈𝙖𝙣𝙖𝙜𝙚𝙙 𝘽𝙮 :
+○ @SHAN_TG
+○ @Abin_x_7
 ○ Updates : <a href='https://t.me/MovieHub_Updates'>OTT & DVD</a>
 """
 
