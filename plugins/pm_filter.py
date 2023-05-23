@@ -956,12 +956,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     
-    elif query.data == "help":
-    s=await message.reply("▣▢▢")
-    h=await s.edit('<b> ▣▣▢')
-    a=await h.edit('▣▣▣')
-    await asyncio.sleep(1)
-    await a.delete()
+    elif query.data == "help": 
         buttons = [[
             InlineKeyboardButton('💼 𝖥𝗂𝗅𝗍𝖾𝗋𝗌 𝖬𝗈𝖽𝖾', callback_data='filters'),
             InlineKeyboardButton('🗂 𝖥𝗂𝗅𝖾 𝖲𝗍𝗈𝗋𝖾', callback_data='store_file')
