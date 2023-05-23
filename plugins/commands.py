@@ -96,8 +96,7 @@ async def start(client, message):
                     InlineKeyboardButton('𝗗𝗶𝘀𝗰𝘂𝘀𝘀𝗶𝗼𝗻 🎪', url='https://t.me/MoviesHub_Discuss')
                 ],[
                     InlineKeyboardButton('ℹ️ 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀', callback_data='help'),
-                    InlineKeyboardButton('👨‍💻 𝗗𝗲𝘃𝘀', callback_data='owner_info') nbbh
-                    bbb
+                    InlineKeyboardButton('👨‍💻 𝗗𝗲𝘃𝘀', callback_data='owner_info') 
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
