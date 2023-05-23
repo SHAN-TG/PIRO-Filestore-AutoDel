@@ -112,15 +112,15 @@ Request Yourself...!!"""
 You are using one of old message,
 Request Again"""
 
-    CUDNT_FND = """<b><i>
+    CUDNT_FND = """<b>
 𝖨 𝖼𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝖺𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝗋𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍
-𝖣𝗂𝖽 𝗒𝗈𝗎 𝗆𝖾𝖺𝗇 𝖺𝗇𝗒 𝗈𝗇𝖾 𝗈𝖿 𝗍𝗁𝖾𝗌𝖾?</i></b>"""
+𝖣𝗂𝖽 𝗒𝗈𝗎 𝗆𝖾𝖺𝗇 𝖺𝗇𝗒 𝗈𝗇𝖾 𝗈𝖿 𝗍𝗁𝖾𝗌𝖾?\n\n<i>Or go to google and check your spelling</i></b>"""
 
-    I_CUDNT = """<b>⁉️ What you mean 🤔 Hey {}, Your word <u>{}</u> is No Movie/Series Related to the Given Word Was Found 🥺</b>\n\n<u>Please Go to Google and Confirm the Correct Spelling🥺</u>"""
+    I_CUDNT = """<b>⁉️ What you mean 🤔 Hey, Your word <u>{}</u> is No Movie/Series Related to the Given Word Was Found 🥺</b>\n\n<u>Please Go to Google and Confirm the Correct Spelling🥺</u>"""
 
-    I_CUD_NT = """❌ no movie <b>𝖨 𝖼𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝖺𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝗋𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍</b>\n\n‼ <b><i>𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖺𝖽𝗆𝗂𝗇 ▶ @SHAN_TG</i></b>"""
+    I_CUD_NT = """❌ <b>𝖨 𝖼𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝖺𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝗋𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍</b>\n\n‼ <b><i>𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖺𝖽𝗆𝗂𝗇 ▶ @SHAN_TG</i></b>"""
 
-    MVE_NT_FND = """❌ movie illa <b>𝖨 𝖼𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝖺𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝗋𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍</b>\n\n‼ <b><i>𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖺𝖽𝗆𝗂𝗇 ▶ @SHAN_TG</i></b>"""
+    MVE_NT_FND = """ <b>The Movie/Series You Requested is Not ❌ in my Database 🗄.  So inform the admin 👮🏻</b>\n\n‼ <b><i>𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖺𝖽𝗆𝗂𝗇 ▶ @SHAN_TG</i></b>"""
 
     TOP_ALRT_MSG = """🔍 𝖢𝗁𝖾𝖼𝗄𝗂𝗇𝗀 𝖿𝗈𝗋 𝗊𝗎𝖾𝗋𝗒 𝗂𝗇 𝖣𝖺𝗍𝖺𝖻𝖺𝗌𝖾..."""
 
