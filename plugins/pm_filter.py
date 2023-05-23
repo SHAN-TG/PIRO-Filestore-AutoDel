@@ -898,10 +898,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('🎬 𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 🎬', url='https://t.me/CinemaKendram')
                 ],[
                     InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟 📡', url='https://t.me/MH_Linkz/82'),
-                    InlineKeyboardButton('𝗗𝗶𝘀𝗰𝘂𝘀𝘀𝗶𝗼𝗻', url='https://t.me/MoviesHub_Discuss')
+                    InlineKeyboardButton('𝗗𝗶𝘀𝗰𝘂𝘀𝘀𝗶𝗼𝗻 🎪', url='https://t.me/MoviesHub_Discuss')
                 ],[
-                    InlineKeyboardButton('𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀', callback_data='help'),
-                    InlineKeyboardButton('𝗗𝗲𝘃𝘀', callback_data='owner_info')
+                    InlineKeyboardButton('ℹ️ 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀', callback_data='help'),
+                    InlineKeyboardButton('👨‍💻 𝗗𝗲𝘃𝘀', callback_data='owner_info')
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
