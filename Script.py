@@ -1,10 +1,12 @@
 class script(object):
     START_TXT = """Hi {}
-<b><u>I'm An Advanced Group Managing bot Created For  </i>
+    
+<b>I'm An Advanced Group Managing bot Created For [𝗠𝗼𝘃𝗶𝗲𝘀 𝗛𝘂𝗯](https://t.me/+Emxhp_i5XXEzYWY1)</b>
 """
 
     HELP_TXT = """ 𝖧𝖾y {} 
-○ /help 
+
+<b>Some of my features may be used in the future</b>
 """
 
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
