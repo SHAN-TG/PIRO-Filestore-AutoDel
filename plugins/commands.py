@@ -44,15 +44,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+                    InlineKeyboardButton('🎬 𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 🎬', url='https://t.me/CinemaKendram')
                 ],[
-                    InlineKeyboardButton('🛡 𝖮𝗐𝗇𝖾𝗋', callback_data="owner_info"),
-                    InlineKeyboardButton('🧩 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉', url=f"https://t.me/{SUPPORT_CHAT}")
+                    InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟 📡', url='https://t.me/MH_Linkz/82'),
+                    InlineKeyboardButton('𝗗𝗶𝘀𝗰𝘂𝘀𝘀𝗶𝗼𝗻 🎪', url='https://t.me/MoviesHub_Discuss')
                 ],[
-                    InlineKeyboardButton('ℹ️ 𝖧𝖾𝗅𝗉', callback_data='help'),
-                    InlineKeyboardButton('😊 𝖠𝖻𝗈𝗎𝗍', callback_data='about'),
-                ],[
-                    InlineKeyboardButton('🔎 𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat='')
+                    InlineKeyboardButton('ℹ️ 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀', callback_data='help'),
+                    InlineKeyboardButton('👨‍💻 𝗗𝗲𝘃𝘀', callback_data='owner_info')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -92,16 +90,14 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+                    InlineKeyboardButton('🎬 𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 🎬', url='https://t.me/CinemaKendram')
                 ],[
-                    InlineKeyboardButton('🛡 𝖮𝗐𝗇𝖾𝗋', callback_data="owner_info"),
-                    InlineKeyboardButton('🧩 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉', url=f"https://t.me/{SUPPORT_CHAT}")
+                    InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟 📡', url='https://t.me/MH_Linkz/82'),
+                    InlineKeyboardButton('𝗗𝗶𝘀𝗰𝘂𝘀𝘀𝗶𝗼𝗻 🎪', url='https://t.me/MoviesHub_Discuss')
                 ],[
-                    InlineKeyboardButton('ℹ️ 𝖧𝖾𝗅𝗉', callback_data='help'),
-                    InlineKeyboardButton('😊 𝖠𝖻𝗈𝗎𝗍', callback_data='about')
-                ],[
-                    InlineKeyboardButton('🔎 𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat='')
-                    
+                    InlineKeyboardButton('ℹ️ 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀', callback_data='help'),
+                    InlineKeyboardButton('👨‍💻 𝗗𝗲𝘃𝘀', callback_data='owner_info') nbbh
+                    bbb
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
