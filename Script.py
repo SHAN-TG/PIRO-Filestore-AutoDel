@@ -1,7 +1,7 @@
 class script(object):
     START_TXT = """<b>Hi {}
     
-I'm An Advanced Group Managing bot Created For [𝗠𝗼𝘃𝗶𝗲𝘀 𝗛𝘂𝗯](https://t.me/+Emxhp_i5XXEzYWY1)</b>
+I'm An Advanced Group Managing bot Created For <a href='https://t.me/+Emxhp_i5XXEzYWY1'>𝗠𝗼𝘃𝗶𝗲𝘀 𝗛𝘂𝗯</a></b>
 """
 
     HELP_TXT = """ 𝖧𝖾y {} 
@@ -152,7 +152,7 @@ Request Again"""
 🤖 𝘽𝙤𝙩 𝙈𝙖𝙣𝙖𝙜𝙚𝙙 𝘽𝙮 :
 ○ @SHAN_TG
 ○ @Abin_x_7
-○ Updates : <a href='https://t.me/MovieHub_Updates'>OTT & DVD</a>
+○ Tᴇᴀᴍ <a href='https://t.me/MH_Linkz'>Movies Hub</a>
 """
 
     NORSLTS = """
