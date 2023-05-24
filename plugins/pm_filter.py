@@ -281,7 +281,7 @@ async def advantage_spoll_choker(bot, query):
                 if NO_RESULTS_MSG:
                     await bot.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, movie)))
                 k = await query.message.edit(script.MVE_NT_FND)
-                await asyncio.sleep(25)
+                await asyncio.sleep(30)
                 await k.delete()
 
 
@@ -967,11 +967,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
-        s=await query.message.reply_text('▣▢▢')
-        h=await s.edit('▣▣▢')
-        a=await h.edit('▣▣▣')
-        await asyncio.sleep(1)
-        await a.delete()
+        s=await query.message.reply_text('○')
+        h=await s.edit('○◔')
+        a=await h.edit('○◔◑')
+        n=await a.edit('○◔◑◕')
+        i=await n.edit('○◔◑◕●')
+        await asyncio.sleep(0)
+        await i.delete()
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
