@@ -1,5 +1,5 @@
 class script(object):
-    STARTMP_TXT = """<b>Hi {}
+    START_TXT = """<b>Hi {}
     
 I'm An Advanced Group Managing bot Created For <a href='https://t.me/+Emxhp_i5XXEzYWY1'>𝗠𝗼𝘃𝗶𝗲𝘀 𝗛𝘂𝗯</a></b>
 """
