@@ -22,7 +22,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '')
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 # Bot images & videos
-PICS = (environ.get('PICS', False))
+PICS = (environ.get('PICS', 'https://telegra.ph/file/031f62eafcd4532f2dd19.jpg https://telegra.ph/file/8bb8e167a1deb2cb40d63.jpg https://telegra.ph/file/60b094aa84b7079f2761a.jpg https://telegra.ph/file/4d91b7deaffd64c04dd84.jpg https://telegra.ph/file/62ba102181e9d2bb7b41d.jpg https://telegra.ph/file/031f62eafcd4532f2dd19.jpg https://telegra.ph/file/15937671fc0e64e8bbef3.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/0593a3103ba1b9a5855bf.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/ea40f1b53dd3b6315c130.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/9eb29912c241d3ce8dd5c.jpg")
