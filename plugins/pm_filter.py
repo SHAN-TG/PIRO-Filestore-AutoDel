@@ -899,7 +899,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.reply_text("f Ok da ",
+        await query.message.reply_text(" I'M a bot created Exclusively for the <a href='https://t.me/Moviephoria'> 𝗠𝗢𝗩𝗜𝗘 𝗣𝗛𝗢𝗥𝗜𝗔</a> Group</b>",
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
