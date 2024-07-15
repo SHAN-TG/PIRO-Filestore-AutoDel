@@ -47,7 +47,7 @@ async def start(client, message):
                     InlineKeyboardButton('🎬 𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 🎬', url='https://t.me/Moviesphoria')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_text("f Ok Da ",
+        await message.reply_text("<b> I'M a bot created Exclusively for the <a href='https://t.me/Moviephoria'> 𝗠𝗢𝗩𝗜𝗘 𝗣𝗛𝗢𝗥𝗜𝗔</a> Group</b> ",
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -85,7 +85,7 @@ async def start(client, message):
                     InlineKeyboardButton('🎬 𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 🎬', url='https://t.me/Moviesphoria')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_text("f Ok Da ",
+        await message.reply_text(" I'M a bot created Exclusively for the <a href='https://t.me/Moviephoria'> 𝗠𝗢𝗩𝗜𝗘 𝗣𝗛𝗢𝗥𝗜𝗔</a> Group</b> ",
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
