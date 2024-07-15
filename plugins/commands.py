@@ -47,9 +47,8 @@ async def start(client, message):
                     InlineKeyboardButton('🎬 𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 🎬', url='https://t.me/Moviesphoria')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply_caption(
+            caption=cap,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -87,9 +86,8 @@ async def start(client, message):
                     InlineKeyboardButton('🎬 𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 🎬', url='https://t.me/Moviesphoria')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply_caption(
+            caption=cap,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
