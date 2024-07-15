@@ -893,9 +893,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == 'tips':
         await query.answer("Tʜɪs Mᴇssᴀɢᴇ Wɪʟʟ Bᴇ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ Dᴇʟᴇᴛᴇᴅ 🗑 Aғᴛᴇʀ 10 Mɪɴᴜᴛᴇs Tᴏ Pʀᴇᴠᴇɴᴛ Cᴏᴘʏʀɪɢʜᴛ ©️", True)
 
-    elif query.data == "startmp":
+    elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('⚡ ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ⚡', callback_data='help')
+                    InlineKeyboardButton('🎬 𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 🎬', url='https://t.me/Moviesphoria')
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -905,7 +905,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.STARTMP_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
+            text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
