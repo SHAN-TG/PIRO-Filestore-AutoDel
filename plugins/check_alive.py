@@ -10,7 +10,7 @@ async def check_alive(_, message):
 
 @Client.on_message(filters.command("mp", CMD))
 async def mp(_, message):
-    await message.reply_text("/ping\n/stats\n")
+    await message.reply_text("○ /stats")
 
 
 @Client.on_message(filters.command("ping", CMD))
