@@ -899,8 +899,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.reply_caption(
-            caption=cap,
+        await query.message.reply_text("f Ok da ",
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
