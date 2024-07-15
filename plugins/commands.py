@@ -154,6 +154,8 @@ async def start(client, message):
                 return await client.send_message(LOG_CHANNEL, "UNABLE TO OPEN FILE.")
             os.remove(file)
             BATCH_FILES[file_id] = msgs
+            
+        filesarr = []
         for msg in msgs:
             title = msg.get("title")
             size=get_size(int(msg.get("size", 0)))
@@ -167,26 +169,39 @@ async def start(client, message):
             if f_caption is None:
                 f_caption = f"{title}"
             try:
-                await client.send_cached_media(
+                msg = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('〽️ ʙᴀᴄᴋᴜᴘ ɢʀᴘ', url="https://t.me/CinemaKendram"),
-                                                   InlineKeyboardButton('sʜᴀʀᴇ 🖲', url='https://t.me/share/url?url=https://t.me/MH_LinkZ') ] ] ),
-                    
                 )
+                filesarr.append(msg)
+                
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 logger.warning(f"Floodwait of {e.x} sec.")
-                await client.send_cached_media(
+                msg =await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('〽️ ʙᴀᴄᴋᴜᴘ ɢʀᴘ', url="https://t.me/CinemaKendram"),
-                                                   InlineKeyboardButton('sʜᴀʀᴇ 🖲', url='https://t.me/share/url?url=https://t.me/MH_LinkZ') ] ] ),
                 )
+                filesarr.append(msg)
+                k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nഫയലുകൾ ഇവിടെ നിന്നും നിങ്ങളുടെ "Saved messages"ലേക്ക് ഫോർവേഡ് ചെയ്തതിന് ശേഷം അവിടെ നിന്ന് ഡൗൺലോഡ് ചെയ്യാൻ ആരംഭിക്കുക. ഫയലുകൾ ഇവിടെ നിന്ന് ഒട്ടോമാറ്റിക്ക് ആയി ഡീലീറ്റാവുന്നതാണ് \n\nFrom here forward the files to your "Saved Messages" and start downloading from there. From here the files will be deleted automatically</b>")
+                await asyncio.sleep(600)
+                for x in filesarr:
+                    await x.delete()
+                    
+            except Exception as e:
+                logger.warning(e, exc_info=True)
+                continue
+            await asyncio.sleep(1) 
+        await sts.delete()
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nഫയലുകൾ ഇവിടെ നിന്നും നിങ്ങളുടെ "Saved messages"ലേക്ക് ഫോർവേഡ് ചെയ്തതിന് ശേഷം അവിടെ നിന്ന് ഡൗൺലോഡ് ചെയ്യാൻ ആരംഭിക്കുക. ഫയലുകൾ ഇവിടെ നിന്ന് ഒട്ടോമാറ്റിക്ക് ആയി ഡീലീറ്റാവുന്നതാണ് \n\n<i>From here forward the files to your "Saved Messages" and start downloading from there. From here the files will be deleted automatically</i></b>")
+        await asyncio.sleep(600)
+        for x in filesarr:
+            await x.delete()
+            
             except Exception as e:
                 logger.warning(e, exc_info=True)
                 continue
