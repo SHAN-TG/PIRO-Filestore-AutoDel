@@ -895,13 +895,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('🎬 𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 🎬', url='https://t.me/CinemaKendram')
-                ],[
-                    InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟 📡', url='https://t.me/MH_Linkz/82'),
-                    InlineKeyboardButton('𝗗𝗶𝘀𝗰𝘂𝘀𝘀𝗶𝗼𝗻 🎪', url='https://t.me/MoviesHub_Discuss')
-                ],[
-                    InlineKeyboardButton('ℹ️ 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀', callback_data='help'),
-                    InlineKeyboardButton('👨‍💻 𝗗𝗲𝘃𝘀', callback_data='owner_info')
+                    InlineKeyboardButton('⚡ ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ⚡', callback_data='help')
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -956,14 +950,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "help": 
         buttons = [[
-            InlineKeyboardButton('𝖥𝗂𝗅𝗍𝖾𝗋𝗌 𝖬𝗈𝖽𝖾', callback_data='filters'),
-            InlineKeyboardButton('𝖥𝗂𝗅𝖾 𝖲𝗍𝗈𝗋𝖾', callback_data='store_file')
-        ], [
-            InlineKeyboardButton('𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇𝗌', callback_data='coct'),
-            InlineKeyboardButton('𝖤𝗑𝗍𝗋𝖺 𝖬𝗈𝖽𝖾', callback_data='extra')
-        ], [
-            InlineKeyboardButton('🏘 𝖧𝗈𝗆𝖾', callback_data='start'),
-            InlineKeyboardButton('♻️ Status', callback_data='stats')
+            InlineKeyboardButton('✗ Close ✗', callback_data="close_data")
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
