@@ -44,13 +44,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('🎬 𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 🎬', url='https://t.me/CinemaKendram')
-                ],[
-                    InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟 📡', url='https://t.me/MH_Linkz/82'),
-                    InlineKeyboardButton('𝗗𝗶𝘀𝗰𝘂𝘀𝘀𝗶𝗼𝗻 🎪', url='https://t.me/MoviesHub_Discuss')
-                ],[
-                    InlineKeyboardButton('ℹ️ 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀', callback_data='help'),
-                    InlineKeyboardButton('👨‍💻 𝗗𝗲𝘃𝘀', callback_data='owner_info')
+                    InlineKeyboardButton('⚡ ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ⚡', callback_data='help')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -90,13 +84,7 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('🎬 𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝚃𝙾 𝙶𝙴𝚃 𝙼𝙾𝚅𝙸𝙴𝚂 🎬', url='https://t.me/CinemaKendram')
-                ],[
-                    InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟 📡', url='https://t.me/MH_Linkz/82'),
-                    InlineKeyboardButton('𝗗𝗶𝘀𝗰𝘂𝘀𝘀𝗶𝗼𝗻 🎪', url='https://t.me/MoviesHub_Discuss')
-                ],[
-                    InlineKeyboardButton('ℹ️ 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀', callback_data='help'),
-                    InlineKeyboardButton('👨‍💻 𝗗𝗲𝘃𝘀', callback_data='owner_info') 
+                    InlineKeyboardButton('⚡ ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ⚡', callback_data='help')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
