@@ -188,7 +188,7 @@ async def start(client, message):
                     protect_content=msg.get('protect', False),
                 )
                 filesarr.append(msg)
-                k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nഫയലുകൾ ഇവിടെ നിന്നും നിങ്ങളുടെ "Saved messages"ലേക്ക് ഫോർവേഡ് ചെയ്തതിന് ശേഷം അവിടെ നിന്ന് ഡൗൺലോഡ് ചെയ്യാൻ ആരംഭിക്കുക. ഫയലുകൾ ഇവിടെ നിന്ന് ഒട്ടോമാറ്റിക്ക് ആയി ഡീലീറ്റാവുന്നതാണ് \n\nFrom here forward the files to your "Saved Messages" and start downloading from there. From here the files will be deleted automatically</b>")
+                k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nഫയലുകൾ ഇവിടെ നിന്നും നിങ്ങളുടെ <u>Saved messages</u> ലേക്ക് ഫോർവേഡ് ചെയ്തതിന് ശേഷം അവിടെ നിന്ന് ഡൗൺലോഡ് ചെയ്യാൻ ആരംഭിക്കുക. ഫയലുകൾ ഇവിടെ നിന്ന് ഒട്ടോമാറ്റിക്ക് ആയി ഡീലീറ്റാവുന്നതാണ് \n\nFrom here forward the files to your Saved Messages and start downloading from there. From here the files will be deleted automatically</b>")
                 await asyncio.sleep(600)
                 for x in filesarr:
                     await x.delete()
@@ -198,7 +198,7 @@ async def start(client, message):
                 continue
             await asyncio.sleep(1) 
         await sts.delete()
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nഫയലുകൾ ഇവിടെ നിന്നും നിങ്ങളുടെ "Saved messages"ലേക്ക് ഫോർവേഡ് ചെയ്തതിന് ശേഷം അവിടെ നിന്ന് ഡൗൺലോഡ് ചെയ്യാൻ ആരംഭിക്കുക. ഫയലുകൾ ഇവിടെ നിന്ന് ഒട്ടോമാറ്റിക്ക് ആയി ഡീലീറ്റാവുന്നതാണ് \n\n<i>From here forward the files to your "Saved Messages" and start downloading from there. From here the files will be deleted automatically</i></b>")
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nഫയലുകൾ ഇവിടെ നിന്നും നിങ്ങളുടെ <u>Saved messages</u> ലേക്ക് ഫോർവേഡ് ചെയ്തതിന് ശേഷം അവിടെ നിന്ന് ഡൗൺലോഡ് ചെയ്യാൻ ആരംഭിക്കുക. ഫയലുകൾ ഇവിടെ നിന്ന് ഒട്ടോമാറ്റിക്ക് ആയി ഡീലീറ്റാവുന്നതാണ് \n\n<i>From here forward the files to your Saved Messages and start downloading from there. From here the files will be deleted automatically</i></b>")
         await asyncio.sleep(600)
         for x in filesarr:
             await x.delete()
